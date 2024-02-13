@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rebisco Special Website</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://unpkg.com/backpack.css'><link rel="stylesheet" href="./buttonstyle.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: pink;
+		}
+		h1 {
+			font-family: 'Delicious Handwritten', cursive;
+			text-align: center;
+			padding: 20px;
+			background-color: pink;
+			color: white;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			margin-top: 50px;
+		}
+		form {
+			text-align: center;
+		}
+		input[type=text], input[type=password] {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button[type=submit] {
+			background-color: black;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button[type=submit]:hover {
+			background-color: grey;
+		}
+		#bg-video {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+</head>
+	<video id="bg-video" autoplay loop muted>
+		<source src="paddington.mp4" type="video/mp4">
+	</video>
+	<h1>Only Rebisco special can login</h1>
+	<form action="redirect.html" method="post">
+		<label for="username">name:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<button type="submit">Login</button>
+	</form>
+    <script>
+	const form = document.querySelector('form');
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		const username = document.querySelector('#username').value;
+		if (username === 'hanna') {
+			window.location.href = 'hanna1.html';
+		} else {
+			alert('UNFORTUNATELY YOURE NOT SPECIAL SO PRESS "OK" IF YOURE NOT SPECIAL DESPITE ALREADY KNOWING YOU ARE NOT SPECIAL');
+		}
+	});
+</script>
+</body> 
+</html>

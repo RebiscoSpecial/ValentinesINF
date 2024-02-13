@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💞</title>
+  <link rel="stylesheet" href="./hanna1style.css">
+
+</head>
+<body>
+ <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .emoticon {
+            font-size: 100px;
+            position: absolute;
+            animation: fly 20s linear infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(100vw, -100vh);
+            }
+            50% {
+                transform: translate(200vw, 0);
+            }
+            75% {
+                transform: translate(100vw, 100vh);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function createEmoticon() {
+                const emoticon = document.createElement("div");
+                emoticon.className = "emoticon";
+                emoticon.innerHTML = "💖"; // Replace with your preferred emoticon
+                document.body.appendChild(emoticon);
+
+                setTimeout(() => {
+                    emoticon.remove();
+                }, 5000);
+            }
+
+            setInterval(createEmoticon, 1000); // Create a new emoticon every second
+        });
+    </script>
+    <title>Flying Hearts</title>
+</head>
+<body>
+</body>
+<!-- partial:index.partial.html -->
+<body>
+  <article>
+    <div class="envelope-container">
+      <p class="message message-1" id="message-1"><strong>Open me Babe!😘</strong><br>.</p>
+      <p class="message message-2" id="message-2"><a href="hanna.html"  rel="noreferrer">Click me😋!.</a></p>
+      <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">close Me...</button>
+      <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084;</button>
+      <div class="envelope-flap">
+        <svg class="inner">
+        <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145" ></polygon>
+        </svg>
+        <svg class="outer" id="outer">
+        <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
+        </svg>
+      </div>
+      <div class="envelope-base"></div>
+    </div>
+    
+  </article>
+  
+</body>
+<!-- partial -->
+  <script  src="./hanna1script.js"></script>
+
+</body>
+</html>
