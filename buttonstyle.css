@@ -17,8 +17,10 @@ body {
 h1 {
   font-size: 2.2rem;
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.15;
+  bottom: 300px;
+  right: 0;
 }
 @media (min-width: 900px) {
   h1 {
