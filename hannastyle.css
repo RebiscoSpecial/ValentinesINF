@@ -10,7 +10,7 @@ html,body{
   width:100%;
   height:100%;
  overflow:hidden;
-  background-image:url("C:/Users/admin/Desktop/New Project/MOBILE PROJECT/love.gif");
+  background-image:url("love.gif");
   background-size:100% 100%;
   z-index:-1;
 }
