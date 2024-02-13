@@ -11,7 +11,7 @@ html,body{
   height:100%;
  overflow:hidden;
   background-image:url("love.gif");
-  background-size:1280px 720px;
+  background-size: 1280x720;
   z-index:-1;
 }
 
