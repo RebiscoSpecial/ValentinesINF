@@ -17,32 +17,9 @@ function typeWriter() {
     else if (txt1.charAt(i) == '|') {
       $(".bg_heart").css("background-image", "url('')");
 
-      // Add a button dynamically after the text
-      var button = $("<button>")
-        .text("Click me!")
-        .attr("id", "dynamicButton")
-        .addClass("transparent-button")
-        .css({
-          "background": "transparent",
-          "position": "absolute",
-          "bottom": "0",
-          "left": "50%",
-          "transform": "translateX(-50%)"
-        })
-        .hide();
-      $(".container").append(button);
-
-      // Show the dynamically added button
-      $('#dynamicButton').show();
     } else
       document.getElementById("text1").innerHTML += txt1.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
-
-// Attach a click event handler to the button
-$(document).on('click', '#dynamicButton', function () {
-  alert('Button clicked!');
-  // Add any other actions you want to perform when the button is clicked
-});
