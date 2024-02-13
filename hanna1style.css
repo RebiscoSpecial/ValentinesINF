@@ -35,10 +35,10 @@ article {
 }
 /* MESSAGES */
 .message-2 {
-	width: -1092px;
+	width: -100px;
 	height: auto;
-	top: -1092px;
-	left: -1092px;
+	top: -400px;
+	left: -200px;
   display: none;
   position: absolute;
 }
@@ -116,9 +116,9 @@ article {
 .close-btn {
  width: 400px; /* Adjust the width of the image */
  position: absolute;
-  top: 50px;
-  bottom: 10px;
-  left: 300px;
+  top: -290px;
+  bottom: 30px;
+  left: 200px;
   color: gray;
   background: none; /* Remove background color */
   border: none;
